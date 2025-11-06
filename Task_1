@@ -4,4 +4,4 @@ def numbers(n):
     return n-1
 
 
-print(numbers(12))
+print(numbers())
