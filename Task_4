@@ -1,0 +1,17 @@
+n = int(input())
+
+
+
+def fibbonachi(n):
+    if n <= 0:
+        return
+    if n == 1:
+        return [0]
+    if n == 2:
+        return [0, 1]
+    fibbonachi_numb = fibbonachi(n - 1)
+    fibbonachi_numb.append(fibbonachi_numb[-1] + fibbonachi_numb[-2])
+    return fibbonachi_numb
+
+
+print(fibbonachi(n))
