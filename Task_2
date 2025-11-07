@@ -1,0 +1,12 @@
+n = int(input())
+m = int(input())
+
+
+def numbers(n, m):
+    if n > m:
+        return
+    print(n)
+    numbers(n + 1, m)
+
+
+numbers(n, m)
